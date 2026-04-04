@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineRecomendação - Estrutura Semântica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecalho-principal">
+        <div class="logo">CineRecomendação</div>
+        <nav class="menu-navegacao">
+            <ul>
+                <li><a href="#login">Entrar</a></li>
+                <li><a href="#feed">Explorar</a></li>
+                <li><a href="#" class="btn-destaque">Recomendar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal">
+        
+        <section id="login" class="secao-formulario">
+            <div class="card-form">
+                <h2>Acesse sua conta</h2>
+                <p>Compartilhe suas séries favoritas com amigos.</p>
+                
+                <form class="form-login">
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" placeholder="exemplo@email.com" required>
+                    </div>
+                    <div class="campo">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" placeholder="Sua senha secreta" required>
+                    </div>
+                    <button type="submit" class="btn-enviar">Entrar</button>
+                </form>
+            </div>
+        </section>
+
+        <hr class="divisor">
+
+        <section id="feed" class="secao-feed">
+            <header class="titulo-secao">
+                <h1>Recomendações Recentes</h1>
+            </header>
+
+            <div class="grid-recomendacoes">
+                <article class="card-recomendacao">
+                    <img src="https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=400" alt="Capa do Filme" class="img-poster">
+                    <div class="info-artigo">
+                        <span class="user-tag">@alvarobarbosa</span>
+                        <h3>Oppenheimer</h3>
+                        <p>A fotografia e a trilha sonora são espetaculares. Um filme denso que merece ser visto no cinema!</p>
+                    </div>
+                </article>
+
+                <article class="card-recomendacao">
+                    <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=400" alt="Capa da Série" class="img-poster">
+                    <div class="info-artigo">
+                        <span class="user-tag">@alvarobarbosa</span>
+                        <h3>Succession</h3>
+                        <p>O roteiro é ácido e brilhante. Se você gosta de dramas familiares e poder, essa é a série certa.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape-rodape">
+        <div class="links-rodape">
+            <a href="#">Sobre</a>
+            <a href="#">Privacidade</a>
+            <a href="#">Contato</a>
+        </div>
+        <p>&copy; 2026 CineRecomendações</p>
+    </footer>
+
+</body>
+</html>
