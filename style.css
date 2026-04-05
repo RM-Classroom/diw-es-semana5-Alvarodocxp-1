@@ -192,3 +192,10 @@ body {
         gap: 20px;
     }
 }
+
+/* Telas médias */
+@media (min-width: 769px) {
+    .grid-recomendacoes {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
