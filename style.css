@@ -161,3 +161,34 @@ body {
     background: #333;
     margin: 20px 0;
 }
+
+/* --- Media Queries --- */
+/* Telas pequenas */
+@media (max-width: 768px) {
+    .cabecalho-principal {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3%;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .menu-navegacao li:not(:last-child) {
+        display: none;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .secao-formulario {
+        padding: 40px 5%;
+    }
+
+    .grid-recomendacoes {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
